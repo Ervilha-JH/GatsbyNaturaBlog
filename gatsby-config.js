@@ -18,6 +18,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "Natura_Blog",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
